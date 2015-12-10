@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dQc-R1-yj2"/>
+                        <viewControllerLayoutGuide type="bottom" id="dvH-Rg-dJp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFC-7G-AMY">
+                                <rect key="frame" x="36" y="290" width="303" height="88"/>
+                                <color key="backgroundColor" red="0.92877462639999997" green="0.0" blue="0.14287473580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="dJc-Au-BmO"/>
+                                    <constraint firstAttribute="height" constant="88" id="qQS-z3-Lxx"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="0.92877462639999997" green="0.0" blue="0.14287473580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gpj-hu-pMA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iFC-7G-AMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QD0-tW-wPz"/>
+                            <constraint firstItem="iFC-7G-AMY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t2n-dp-Y2i"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="testBtn" destination="iFC-7G-AMY" id="YxV-ss-0GE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.5" y="318.5"/>
+        </scene>
+        <!--TestVC-->
+        <scene sceneID="BdY-7k-JSd">
+            <objects>
+                <viewController storyboardIdentifier="TestVC" id="B2a-oY-jYH" customClass="TestVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nZx-xK-N0P"/>
+                        <viewControllerLayoutGuide type="bottom" id="iZb-WN-S3i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s3V-4t-aK1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3M-RP-wiV">
+                                <rect key="frame" x="74" y="44" width="226" height="519"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZY-7D-Orl">
+                                        <rect key="frame" x="92" y="282" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22486981419999999" green="0.48056894659999999" blue="0.82370487969999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84771265959999997" green="0.90754672240000001" blue="0.76997597539999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q3M-RP-wiV" secondAttribute="trailing" constant="59" id="1eq-U1-vnw"/>
+                            <constraint firstItem="iZb-WN-S3i" firstAttribute="top" secondItem="Q3M-RP-wiV" secondAttribute="bottom" constant="104" id="DNj-2J-GUM"/>
+                            <constraint firstItem="Q3M-RP-wiV" firstAttribute="leading" secondItem="s3V-4t-aK1" secondAttribute="leadingMargin" constant="58" id="FyG-Pt-qKY"/>
+                            <constraint firstItem="Q3M-RP-wiV" firstAttribute="top" secondItem="nZx-xK-N0P" secondAttribute="bottom" constant="24" id="T4p-3W-Irm"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeN-uk-0kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158.5" y="1007.5"/>
+        </scene>
+    </scenes>
+</document>
